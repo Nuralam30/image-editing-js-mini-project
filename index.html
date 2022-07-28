@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="main-content">
+
+	<!---------------all buttons here--------------->
+		<div class="btn-left">
+			<button type="button" class="btn btn-default bg-color">BG Color</button>
+			<div class="background-input">
+				<input class="bgColor" type="text" name="background" placeholder="color or #xxxxxx">
+				<button class="addBg subBtn" type="button">Add</button>
+				<button class="cancelBg subBtn" type="button">Cancel</button>
+			</div>
+
+			<button type="button" class="btn btn-default addImage">Add Image <i class="fas fa-plus"></i></button>
+			<button type="button" class="btn btn-default addText">Add Text <i class="fas fa-plus"></i></button>
+
+			<div class="text-add">
+				<input class="text1" type="text" name="text1" placeholder="Enter canvas title">
+				<input class="text2" type="text" name="text2" placeholder="Enter canvas Text">
+				<button class="addtext subBtn" type="button">Add</button>
+				<button class="canceltext subBtn" type="button">Cancel</button>
+			</div>
+		</div>
+
+		
+		<div class="btn-bottom">
+			<button type="button" class="btn btn-default clear-canvas">Clear Canvas <i class="fas fa-eraser"></i></button>
+			<button type="button" class="btn btn-default border-color">Border Color <i class="fas fa-edit"></i></button>
+		</div>
+		<div class="btn-save">
+			<button type="button" class="btn btn-default save-btn" onclick="save('canvas')"> Save as PNG/JPG <i class="fas fa-save"></i></button>
+		</div>
+		
+
+	<!-------canvas section start-------->
+		<div id="canvas">
+			<div class="canvas-content">
+				<h2 class="title-head"></h2>
+
+				<input type="file" name="file-input" class="file-input" hidden="hidden">
+				<div class="image">
+					<img src="" alt="Preview Image" class="preview-Image">
+					<span class="img-text"><h3>Preview Image</h3></span>
+				</div>
+
+				<div class="text-area">
+					<h5 class="title-text"></h5>
+				</div>
+			</div>
+		</div>
+
+
+	<!---------panel section start--------->
+		<div class="side-panel">
+			<div class="container-panel">
+				<h2 class="text-center">Basic Panel</h2>
+				<div class="panel panel-default text1Panel">
+				    <div class="panel-body">Text 1 <i class="fas fa-times label1"></i></div>
+				</div>
+
+				<div class="panel panel-default imagePanel">
+				    <div class="panel-body">Image 1 <i class="fas fa-times label2"></i></div>
+				</div>
+
+				<div class="panel panel-default text2Panel">
+				    <div class="panel-body">Text 2 <i class="fas fa-times label3"></i></div>
+				</div>
+			</div>	
+		</div>	
+
+	</div>
+
+
+		<!-------bootstrap,jquery,popper.min.js-------->
+		<script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/popper.min.js"></script>
+
+
+		<!-------custom js------>
+		<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

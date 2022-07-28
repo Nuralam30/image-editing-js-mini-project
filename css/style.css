@@ -1,0 +1,185 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.main-content{
+	width: 1100px;
+	height: 600px;
+	border: 2px solid #999;
+	margin: 0 auto;
+	margin-top: 20px;
+	position: relative;
+}
+
+/*-----all buttons here----*/
+.btn-left{
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	transition: .8s;
+}
+.btn-left .bg-color,.btn-left .addImage,.btn-left .addText{
+	width: 150px;
+	height: 45px;
+	font-size: 18px;
+	border: 1px solid #000;
+}
+.btn-left .addImage{
+	position: absolute;
+	top: 60px;
+	left: 0;
+}
+.btn-left .addText{
+	position: absolute;
+	top: 120px;
+	left: 0;
+}
+.fas{
+	float: right;
+	font-size: 22px;
+	line-height: 28px;
+}
+.fa-plus{
+	color: #22ff22;
+}
+.fa-eraser{
+	color: #4343ff;
+}
+.fa-times{
+	color: #ff1212;
+	cursor: pointer;
+}
+.text-add{
+	position: absolute;
+	top: 175px;
+	left: 20px;
+	display: none;
+}
+input{
+	padding: 5px;
+	margin-bottom: 7px;
+	max-width: 150px;
+}
+.background-input{
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	display: none;
+}
+.subBtn{
+	padding: 3px;
+	border-radius: 5px;
+}
+
+
+
+/*----bottom buttons---*/
+.btn-bottom{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+.btn-bottom .clear-canvas,.btn-bottom .border-color{
+	width: 180px;
+	height: 45px;
+	font-size: 18px;
+	border: 1px solid #000;
+}
+.border-color{
+	position: absolute;
+	left: 230px;
+	bottom: 0;
+}
+.save-btn{
+	width: 220px;
+	height: 45px;
+	font-size: 18px;
+	border: 1px solid #000;
+	position: absolute;
+	right: 20px; 
+	bottom: 20px;
+}
+.btn:hover{
+	color: #03e9f4;
+	background-color: #000;
+	box-shadow: 0 0 5px #03e9f4 inset,
+				0 0 10px #03e9f4 inset,
+				0 0 15px #03e9f4 inset,
+				0 0 10px #03e9f4 inset;
+}
+
+
+/*-----canvas section------*/
+#canvas{
+	width: 540px;
+	height: 450px;
+	border: 1px solid #8888bb;
+	position: absolute;
+	top: 50px;
+	left: 200px;
+	padding: 15px;
+}
+#canvas h2{
+	text-align: center;
+}
+
+#canvas .image{
+	width: 400px;
+	min-height: 300px;
+	float: right;
+	border: 2px solid #dddddd;
+
+
+	/*---default text---*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	color: #dedede;
+}
+#canvas .image img{
+	width: 100%;
+	height: 100%;
+}
+.preview-Image{
+	display: none;
+	width: 100%;
+}
+.text-area{
+	width: 400px;
+	height: 40px;
+	/*border: 1px solid #222;*/
+	position: absolute;
+	bottom: 20px;
+	left: 50px;
+	padding: 5px;
+	overflow: hidden;
+}
+.text-area h5{
+	font-size: 16px;
+}
+
+
+/*-----panel section---*/
+.side-panel{
+	width: 280px;
+	height: 450px;
+	position: absolute;
+	right: 20px;
+	top: 50px;
+	border: 1px solid #44dd44;
+}
+.side-panel .container-panel{
+	padding: 10px;
+}
+.side-panel .panel{
+	height: 45px;
+	border: 1px solid #777;
+	border-radius: 7px;
+	margin-bottom: 5px;
+	display: none;
+}
+.side-panel .panel-body{
+	padding: 10px 10px;
+}
